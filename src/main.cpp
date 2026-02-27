@@ -13,7 +13,7 @@
 #define LDR_PIN A0
  // Define LDR analog pin (Use A0)
 
- // TODO 2:
+ int ldrValue = 0;
  // Create variable to store sensor reading
 
 void setup() {
