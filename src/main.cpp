@@ -18,10 +18,10 @@
 
 void setup() {
 
-    // TODO 3:
+    Serial.begin(9600);
     // Initialize Serial communication (9600 baud rate)
 
-    // TODO 4:
+    Serial.println("LDR setup");
     // Print system initialization message
 }
 
