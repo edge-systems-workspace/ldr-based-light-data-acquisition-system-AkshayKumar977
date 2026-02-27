@@ -27,18 +27,20 @@ void setup() {
 
 void loop() {
 
-    // TODO 5:
+    ldrValue = analogRead(A0);
     // Read analog value from LDR
 
-    // TODO 6:
+    Serial.println(ldrValue);
     // Print raw ADC value
 
-    // TODO 7:
+    if (ldrValue == 255) {
+        Serial.println("Bright");
+    } else if (ldrValue == 0) {
+        Serial.println("Dark");
+    } else {
+        Serial.println("Moderate");
+    }
     // Apply threshold logic (Bright / Dark detection)
-
-    // TODO 8:
-    // Print brightness status
-
-    // TODO 9:
+    delay(1000);
     // Add delay (500ms or 1 second)
 }
